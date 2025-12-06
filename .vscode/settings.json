@@ -1,3 +1,4 @@
-{
-    "dotnet.defaultSolution": "SampleApp/SampleApp.sln"
+setti{
+        "dotnet.defaultSolution": "SampleApp/SampleApp.sln"
+        }
 }
