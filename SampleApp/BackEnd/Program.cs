@@ -46,6 +46,12 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGet("/echo", (string input) =>
+{
+    app.Logger.LogInformation("User input: " + input);
+    return input;
+});
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
